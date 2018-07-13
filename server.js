@@ -44,3 +44,20 @@ const cors = require('cors');
         console.error(ex.stack);
         process.exit(1);
       });
+
+      const chatHistory = { messages: [] };
+    
+    server.post('/message', (req, res, next) => {
+      const { user = null, message = '', timestamp = +new Date } = req.body;
+      const sentimentScore = sentiment.analyze(message).score;
+      
+      const chat = { user, message, timestamp, sentiment: sentimentScore };
+      
+      chatHistory.messages.push(chat);
+      pusher.trigger('chat-room', 'new-message', { chat });
+    });
+    
+    server.post('/messages', (req, res, next) => {
+      res.json({ ...chatHistory, status: 'success' });
+    });
+    

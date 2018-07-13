@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layout from '../components/Layout';
-    
+import Chat from '../components/Chat';
+
     class IndexPage extends Component {
     constructor(props){
     	super(props);
@@ -50,8 +51,9 @@ import Layout from '../components/Layout';
                     { !user && <input type="text" className="form-control mt-3 px-3 py-2" onKeyUp={this.handleKeyUp} autoComplete="off" style={nameInputStyles} /> }
                   </div>
                 </section>
-                <section className="col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-white px-0"></section>
-
+				<section className="col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-white px-0">
+				      { user && <Chat activeUser={user} /> }
+			    </section>
               </div>   
 
             </main>
