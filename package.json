@@ -2,11 +2,14 @@
   "name": "sentimental-chat-app",
   "version": "1.0.0",
   "description": "",
+  "homepage": "http://piyushmehta.me/NextJS-chatapp",
   "main": "index.js",
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "NODE_ENV=production node server.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [],
   "author": "",
@@ -23,5 +26,8 @@
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "sentiment": "^5.0.1"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }
