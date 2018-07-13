@@ -1,103 +1,4 @@
-module.exports =
-__NEXT_REGISTER_PAGE('/', function() {
-          var comp =
-      webpackJsonp([4],{
-
-/***/ "./components/Layout.js":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("./node_modules/react/index.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head__ = __webpack_require__("./node_modules/next/head.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_head__);
-var _jsxFileName = "/Users/piyushmehta/sentimental-chat-app/components/Layout.js";
-
-
-
-var Layout = function Layout(props) {
-  return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_0_react__["Fragment"], {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 5
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1_next_head___default.a, {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 6
-    }
-  }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
-    charSet: "utf-8",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 7
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("meta", {
-    name: "viewport",
-    content: "width=device-width, initial-scale=1, shrink-to-fit=no",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 8
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("link", {
-    rel: "stylesheet",
-    href: "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css",
-    integrity: "sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm",
-    crossOrigin: "anonymous",
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 9
-    }
-  }), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("title", {
-    __source: {
-      fileName: _jsxFileName,
-      lineNumber: 10
-    }
-  }, props.pageTitle || 'Sentimental Chat')), props.children);
-};
-
-/* harmony default export */ __webpack_exports__["a"] = (Layout);
-
-/***/ }),
-
-/***/ "./node_modules/next/head.js":
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./node_modules/next/dist/lib/head.js")
-
-
-/***/ }),
-
-/***/ "./node_modules/webpack/buildin/harmony-module.js":
-/***/ (function(module, exports) {
-
-module.exports = function(originalModule) {
-	if(!originalModule.webpackPolyfill) {
-		var module = Object.create(originalModule);
-		// module.parent = undefined by default
-		if(!module.children) module.children = [];
-		Object.defineProperty(module, "loaded", {
-			enumerable: true,
-			get: function() {
-				return module.l;
-			}
-		});
-		Object.defineProperty(module, "id", {
-			enumerable: true,
-			get: function() {
-				return module.i;
-			}
-		});
-		Object.defineProperty(module, "exports", {
-			enumerable: true,
-		});
-		module.webpackPolyfill = 1;
-	}
-	return module;
-};
-
-
-/***/ }),
+webpackHotUpdate(4,{
 
 /***/ "./pages/index.js":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
@@ -131,13 +32,25 @@ var IndexPage =
 function (_Component) {
   _inherits(IndexPage, _Component);
 
-  function IndexPage(props) {
-    var _this;
+  function IndexPage() {
+    var _ref;
+
+    var _temp, _this;
 
     _classCallCheck(this, IndexPage);
 
-    _this = _possibleConstructorReturn(this, (IndexPage.__proto__ || Object.getPrototypeOf(IndexPage)).call(this, props));
-    Object.defineProperty(_assertThisInitialized(_this), "handleKeyUp", {
+    for (var _len = arguments.length, args = new Array(_len), _key = 0; _key < _len; _key++) {
+      args[_key] = arguments[_key];
+    }
+
+    return _possibleConstructorReturn(_this, (_temp = _this = _possibleConstructorReturn(this, (_ref = IndexPage.__proto__ || Object.getPrototypeOf(IndexPage)).call.apply(_ref, [this].concat(args))), Object.defineProperty(_assertThisInitialized(_this), "state", {
+      configurable: true,
+      enumerable: true,
+      writable: true,
+      value: {
+        user: null
+      }
+    }), Object.defineProperty(_assertThisInitialized(_this), "handleKeyUp", {
       configurable: true,
       enumerable: true,
       writable: true,
@@ -150,11 +63,7 @@ function (_Component) {
           });
         }
       }
-    });
-    _this.state = {
-      user: null
-    };
-    return _this;
+    }), _temp));
   }
 
   _createClass(IndexPage, [{
@@ -172,34 +81,34 @@ function (_Component) {
         boxShadow: 'none !important'
       };
       return __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement(__WEBPACK_IMPORTED_MODULE_1__components_Layout__["a" /* default */], {
-        pageTitle: "Sentimental Chat By Piyush",
+        pageTitle: "Sentimental Chat",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 32
+          lineNumber: 30
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("main", {
         className: "container-fluid position-absolute h-100 bg-dark",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 34
+          lineNumber: 32
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "row position-absolute w-100 h-100",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 36
+          lineNumber: 34
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
         className: "col-md-8 d-flex flex-row flex-wrap align-items-center align-content-center px-5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 38
+          lineNumber: 36
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("div", {
         className: "px-5 mx-5",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 39
+          lineNumber: 37
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
         className: "d-block w-100 h1 text-light",
@@ -208,12 +117,12 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 40
+          lineNumber: 39
         }
       }, user ? __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 43
+          lineNumber: 42
         }
       }, __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("span", {
         style: {
@@ -221,9 +130,9 @@ function (_Component) {
         },
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 44
+          lineNumber: 43
         }
-      }, "Ji aaya nu!"), " ", user) : "Ahoo!  \n                            Naa Ki hai Tuhada?"), !user && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
+      }, "Ji aaya nu!"), " ", user) : "Naam Kya hai Tumhara?"), !user && __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("input", {
         type: "text",
         className: "form-control mt-3 px-3 py-2",
         onKeyUp: this.handleKeyUp,
@@ -231,13 +140,13 @@ function (_Component) {
         style: nameInputStyles,
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 50
+          lineNumber: 48
         }
       }))), __WEBPACK_IMPORTED_MODULE_0_react___default.a.createElement("section", {
         className: "col-md-4 position-relative d-flex flex-wrap h-100 align-items-start align-content-between bg-white px-0",
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 53
+          lineNumber: 51
         }
       }))));
     }
@@ -267,18 +176,7 @@ function (_Component) {
   
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__("./node_modules/webpack/buildin/harmony-module.js")(module)))
 
-/***/ }),
-
-/***/ 3:
-/***/ (function(module, exports, __webpack_require__) {
-
-module.exports = __webpack_require__("./pages/index.js");
-
-
 /***/ })
 
-},[3])
-          return { page: comp.default }
-        })
-      ;
-//# sourceMappingURL=index.js.map
+})
+//# sourceMappingURL=4.b7e764dd6e10ebfe4a4e.hot-update.js.map
